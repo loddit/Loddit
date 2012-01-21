@@ -54,6 +54,9 @@ module Loddit
     config.generators do |g|
         g.assets false
         g.helper false
+        g.migration false
+        g.test_framework :rspec
+        g.options[:active_record][:migration] = false
     end
   end
 end
