@@ -1,14 +1,16 @@
+#source 'http://rubygems.org/'
 source 'http://ruby.taobao.org/'
 
-gem 'rails', '3.1.3'
+gem 'rails', '3.2.0'
 
 gem 'mysql2'
 gem 'sqlite3', '1.3.5'
+gem 'auto_migrations', :git => 'git://github.com/antage/auto_migrations.git'
 gem 'json'
 
 group :assets do
-  gem 'sass-rails',   '~> 3.1.5'
-  gem 'coffee-rails', '~> 3.1.1'
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
   gem 'rails-backbone'
   gem 'bootstrap-sass'
@@ -16,8 +18,8 @@ group :assets do
 end
 
 group :test do
-  gem 'cucumber-rails'
   gem 'cucumber'
+  gem 'cucumber-rails'
   gem 'rspec'
   gem 'rspec-rails'
   gem 'capybara'
