@@ -8,3 +8,8 @@ Scenario: See article list
   When I go to the list of articles
   Then I should see Foo
   And I should see Bar
+  
+Scenario: See each article detail
+  Given There are articles titled Foo,Bar
+  When I go to article titled Foo
+  Then I should read article titled Foo
