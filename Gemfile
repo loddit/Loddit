@@ -25,7 +25,8 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'database_cleaner' 
-  gem 'spork', '~> 0.9.0.rc'
+  gem 'spork'
+  gem 'watchr'
 end
 
 
