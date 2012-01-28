@@ -1,2 +1,23 @@
-<h1>Site#index</h1>
-<p>Find me in app/views/site/index.html.erb</p>
+<div id="index">
+  <div id="articles">
+  </div>
+</div>
+
+<script type="text/template" id="article-template">
+  <p class="title"><b>{{title}}</b></p>
+  <input class="xlarge" name="title" size="30" type="text" value="{{title}}" >
+  <div class="twipsy below">
+    <div class="twipsy-arrow"></div>
+    <div class="twipsy-inner">Title can not be empty</div>
+  </div>
+  <p>{{body}}</p>
+</script>
+
+<script type="text/template" id="index-template">
+  <%= form_for(@article, :remote => "true") do |form| -%>
+  <p><%= form.text_field :title ,:placeholder =>"Title can not be empty"%></p>
+  <p><%= form.text_area :body ,:placeholder =>"Article body can not be empty" ,:rows => 4%></p>
+  <p><%= form.submit %></p>
+  <% end -%>
+  <span>Length:{{length}}</span>
+</script>

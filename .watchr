@@ -45,15 +45,14 @@ def run_feature(feature)
 end
 
 def run_bundle_install
-  run "bundle install"
-  false 
+  puts "bundling..."
+  system "bundle install"
 end
 
 def run_database_migrate
   run "cp db"
   run "rake db:auto:migrate"
   run "rake db:test:clone"
-  false
 end
 
 def run_suite

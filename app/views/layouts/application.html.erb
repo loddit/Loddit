@@ -4,11 +4,30 @@
   <title>Loddit</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "backbone/loddit" %>
+  <%= yield :head %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="container">
+    <div class="topbar" data-dropdown="dropdown">
+      <div class="topbar-inner">
+        <div class="container">
+          <h3><a href="#">Loddit</a></h3>
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+          <form class="pull-right" action="">
+            <input type="text" placeholder="Search">
+          </form>
+        </div>
+      </div><!-- /topbar-inner -->
+    </div>
+    <div id="page">
+      <%= yield %>
+    </div>
+  </div>
 </body>
 </html>

@@ -8,4 +8,5 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
-//= require bootstrap
+//= require mustache
+//= require twitter/bootstrap

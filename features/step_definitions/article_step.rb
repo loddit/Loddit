@@ -17,3 +17,4 @@ Then /^I should read article titled (\w+)$/ do |title|
   page.should have_content(article.title)
   page.should have_content(article.body)
 end
+
