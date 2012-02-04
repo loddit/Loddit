@@ -21,3 +21,12 @@
   <% end -%>
   <span>Length:{{length}}</span>
 </script>
+
+<script type="text/javascript">
+  $(function() {
+  window.c = new Loddit.Collections.Articles(<%= @articles.to_json.html_safe %>);
+  window.i = new Loddit.Views.Index({collection:c});
+  window.r = new Loddit.Routers.Articles;
+  Backbone.history.start({pushState: true});
+  })
+</script>
