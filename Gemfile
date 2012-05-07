@@ -1,7 +1,7 @@
 #source 'http://rubygems.org/'
 source 'http://ruby.taobao.org/'
 
-gem 'rails', '3.2.0'
+gem 'rails', '3.2.3'
 
 gem 'mysql2'
 gem 'sqlite3', '1.3.5'
@@ -13,6 +13,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
   gem 'rails-backbone'
+  gem 'spine-rails'
   gem 'twitter-bootstrap-rails'
   gem 'jquery-rails'
 end
