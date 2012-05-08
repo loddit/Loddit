@@ -71,7 +71,6 @@ $ ->
       @collection.bind("reset",@render,this)
       @render()
 
-  
     render: =>
       self = this
       self.el.html(self.template({length:self.collection.length}))
