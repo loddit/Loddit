@@ -25,7 +25,7 @@ group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
-  gem 'database_cleaner' 
+  gem 'database_cleaner'
   gem 'spork'
   gem 'watchr'
 end
